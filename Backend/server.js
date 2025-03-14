@@ -1,7 +1,6 @@
 import express from "express";
 import { createClient } from "@libsql/client";
 import dotenv from "dotenv";
-import db from "./db.js";
 dotenv.config();
 const app = express();
 const port = process.env.PORT || 3000;
