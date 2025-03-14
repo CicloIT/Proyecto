@@ -9,8 +9,8 @@ const port = process.env.PORT || 3000;
 app.use(express.json());
 
 const db = createClient({
-  url: process.env.TURSO_DB_URL,
-  authToken: process.env.TURSO_AUTH_TOKEN,
+  url: 'libsql://cicloit-samuelnar.turso.io',
+  authToken: process.env.TURSO_DB_TOKEN,
 });
 
 app.get("/items", async (req, res) => {
