@@ -1,7 +1,6 @@
 import express from "express";
 import { createClient } from "@libsql/client";
 import dotenv from "dotenv";
-
 dotenv.config();
 
 const app = express();
